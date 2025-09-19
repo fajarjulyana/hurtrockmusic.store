@@ -1,6 +1,3 @@
-` tags.
-
-<replit_final_file>
 # Developer Guide - Hurtrock Music Store
 
 **Copyright 2024 Fajar Julyana. All rights reserved.**

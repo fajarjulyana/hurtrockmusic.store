@@ -171,7 +171,7 @@ flowchart TD
     K -->|Delete| N[🗑️ Delete Confirmation]
     K -->|Search| O[🔍 Admin Product Search]
 
-    L --> P[🖼️ Image Upload (Max 5)]
+    L --> P["🖼️ Image Upload (Max 5)"]
     M --> P
     P --> Q[✅ Validation & Save]
 

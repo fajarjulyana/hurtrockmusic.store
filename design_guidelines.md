@@ -1,122 +1,139 @@
-# Hurtrock Music Store Design Guidelines
+# Panduan Desain Hurtrock Music Store
 
-## Design Approach
-**Vintage Rock Aesthetic**: Drawing inspiration from vintage music culture and rockstar aesthetics, combining classic rock venues with modern e-commerce patterns. The design creates an immersive experience reminiscent of legendary music stores where rock history was made, while maintaining modern usability and accessibility standards.
+## Pendekatan Desain
 
-## Core Design Elements
+**Estetika Rock Vintage**: Terinspirasi dari budaya musik vintage dan nuansa rockstar, menggabungkan suasana toko musik klasik dengan pola e-commerce modern. Desain ini menghadirkan pengalaman imersif yang mengingatkan pada toko musik legendaris, namun tetap menjaga standar kegunaan dan aksesibilitas modern.
 
-### A. Color Palette
-**Primary Colors (Dark Mode)**:
-- Background: 25 15% 8% (deep charcoal with warm undertones)
-- Surface: 25 12% 12% (elevated surfaces)
-- Text Primary: 35 8% 92% (warm off-white)
+## Elemen Desain Inti
 
-**Brand Orange (from logo)**:
-- Primary Orange: 25 85% 55% (vibrant vintage orange)
-- Orange Accent: 30 75% 45% (deeper burnt orange)
-- Orange Light: 35 60% 70% (subtle orange highlights)
+### A. Palet Warna
 
-**Supporting Colors**:
-- Gold Accent: 45 70% 60% (vintage brass/gold for premium items)
-- Muted Orange: 25 45% 35% (borders and subtle elements)
+**Warna Utama (Dark Mode)**:
 
-### B. Typography
-- **Primary**: Google Fonts "Bebas Neue" (headers, rockstar vibe)
-- **Secondary**: "Inter" (body text, readability)
-- **Accent**: "Rock Salt" (decorative elements, vintage feel)
+* Latar Belakang: 25 15% 8% (charcoal gelap dengan nuansa hangat)
+* Permukaan: 25 12% 12% (lapisan terangkat)
+* Teks Utama: 35 8% 92% (putih hangat)
 
-### C. Layout System
-Tailwind spacing primitives: **2, 4, 6, 8, 12, 16**
-- Tight spacing: p-2, m-4
-- Standard spacing: p-6, gap-8
-- Generous spacing: p-12, mb-16
+**Oranye Brand (dari logo)**:
 
-### D. Component Library
+* Oranye Utama: 25 85% 55% (oranye vintage cerah)
+* Oranye Aksen: 30 75% 45% (oranye terbakar lebih gelap)
+* Oranye Terang: 35 60% 70% (sorotan oranye lembut)
 
-**Navigation**: Dark header with vintage-styled logo, orange accent hover states
-**Product Cards**: Dark background with orange border on hover, vintage-inspired typography
-**Buttons**: Primary orange with subtle texture effects, outline variants with blurred backgrounds over images
-**Forms**: Dark inputs with orange focus rings, vintage-styled labels
-**Hero Section**: Full-width with gradient overlay featuring brand orange tones
+**Warna Pendukung**:
 
-### E. Visual Treatment
+* Aksen Emas: 45 70% 60% (emas/brass vintage untuk item premium)
+* Oranye Redup: 25 45% 35% (garis batas dan elemen halus)
 
-**Gradients**: 
-- Hero backgrounds: Deep charcoal to orange (25 15% 8% to 25 85% 55%)
-- Button treatments: Subtle orange gradients (25 85% 55% to 30 75% 45%)
-- Card overlays: Transparent black to orange tints
+### B. Tipografi
 
-**Textures**: Subtle vintage paper texture overlays, distressed edge effects on key elements
+* **Utama**: Google Fonts "Bebas Neue" (judul, nuansa rockstar)
+* **Sekunder**: "Inter" (teks isi, keterbacaan)
+* **Aksen**: "Rock Salt" (elemen dekoratif, nuansa vintage)
 
-**Background Treatments**: Dark base with warm orange accent lighting effects, vintage concert poster inspired sections
+### C. Sistem Layout
 
-## Images Section
+Gunakan spacing Tailwind: **2, 4, 6, 8, 12, 16**
 
-**Hero Image**: Large full-width hero featuring vintage amplifiers, guitars, or concert stage with orange lighting overlay
-**Product Images**: High-quality photos of instruments against dark backgrounds with warm lighting
-**Category Banners**: Vintage-styled graphics representing different music categories (guitars, drums, vinyl)
-**Background Elements**: Subtle music-themed patterns (sheet music, sound waves) in very low opacity
+* Rapat: p-2, m-4
+* Standar: p-6, gap-8
+* Luas: p-12, mb-16
 
-## Key Design Principles
+### D. Komponen
 
-1. **Vintage Rockstar Aesthetic**: Embrace worn textures, bold typography, and concert-inspired layouts
-2. **Orange Brand Consistency**: Use the logo's orange throughout as the primary accent and CTA color
-3. **Dark Mode First**: Deep, warm dark backgrounds create an intimate music venue atmosphere
-4. **Hierarchy Through Contrast**: Use orange strategically against dark backgrounds for important elements
-5. **Mobile-First Responsive**: Ensure vintage aesthetics translate beautifully across all devices
+**Navigasi**: Header gelap dengan logo vintage, efek hover oranye
+**Kartu Produk**: Latar gelap dengan border oranye saat hover, tipografi vintage
+**Tombol**: Oranye utama dengan efek tekstur halus, varian outline dengan latar buram
+**Formulir**: Input gelap dengan cincin fokus oranye, label bergaya vintage
+**Hero Section**: Layar penuh dengan overlay gradasi bernuansa oranye brand
 
-## Implementation Details
+### E. Gaya Visual
 
-### **Responsive Breakpoints:**
-- **Mobile**: ≤768px (single column, drawer navigation)
-- **Tablet**: 768px-1024px (two-column grid, condensed navigation)
-- **Desktop**: ≥1024px (multi-column layout, full navigation)
+**Gradasi**:
 
-### **Component Specifications:**
+* Hero: charcoal gelap ke oranye (25 15% 8% → 25 85% 55%)
+* Tombol: gradasi oranye lembut (25 85% 55% → 30 75% 45%)
+* Kartu: overlay hitam transparan ke nuansa oranye
 
-**Header Component**:
-- Dark background with vintage orange logo accent
-- Sticky navigation with smooth scroll behavior
-- Mobile hamburger menu with slide-out drawer
-- Search bar with orange focus states
-- Cart icon with item count badge
+**Tekstur**: Overlay tekstur kertas vintage, efek tepi usang pada elemen utama
 
-**Product Cards**:
-- Dark card background with subtle border
-- Orange accent border on hover with smooth transition
-- High-quality product images with aspect ratio preservation
-- Typography hierarchy: Bebas Neue for titles, Inter for descriptions
-- Orange CTA buttons with hover elevation effects
+**Latar**: Basis gelap dengan efek pencahayaan oranye hangat, bagian terinspirasi poster konser vintage
 
-**Shopping Cart**:
-- Slide-out panel design for non-disruptive shopping
-- Session-based persistence across page refreshes
-- Quantity controls with orange accent buttons
-- Real-time total calculation with currency formatting
+## Bagian Gambar
 
-**Admin Panel**:
-- Dark dashboard design with orange accent elements
-- Form components with proper validation states
-- Data tables with sorting and filtering capabilities
-- Modal dialogs for CRUD operations
+**Hero Image**: Amplifier, gitar, atau panggung konser dengan overlay cahaya oranye
+**Gambar Produk**: Foto instrumen berkualitas tinggi dengan latar gelap dan cahaya hangat
+**Banner Kategori**: Grafis vintage sesuai kategori (gitar, drum, vinyl)
+**Elemen Latar**: Pola bertema musik (notasi, gelombang suara) dengan opasitas rendah
 
-### **Accessibility Standards:**
-- WCAG 2.1 AA compliance for color contrast
-- Keyboard navigation support for all interactive elements
-- Screen reader optimized with proper ARIA labels
-- Focus indicators with orange accent colors
-- Semantic HTML structure throughout
+## Prinsip Desain Utama
 
-### **Performance Optimizations:**
-- Lazy loading for product images and components
-- Optimized font loading with display: swap
-- CSS-in-JS optimization with Tailwind purging
-- Image optimization with proper srcset attributes
+1. **Nuansa Rockstar Vintage**: Tekstur usang, tipografi tegas, layout terinspirasi konser
+2. **Konsistensi Oranye Brand**: Gunakan oranye logo sebagai aksen utama dan CTA
+3. **Dark Mode First**: Latar gelap hangat menciptakan suasana venue musik intim
+4. **Hierarki Kontras**: Oranye digunakan strategis melawan latar gelap
+5. **Responsif Mobile-First**: Estetika vintage tetap indah di semua perangkat
 
-### **International Design Considerations:**
-- RTL layout support preparation (planned)
-- Currency symbol positioning for IDR/USD
-- Text expansion accommodation for translations
-- Cultural color sensitivity (orange tested across cultures)
+## Detail Implementasi
 
-The design system creates an authentic vintage rock atmosphere while ensuring modern e-commerce functionality, accessibility, and performance across all devices and user contexts.
+### Breakpoints Responsif
+
+* **Mobile**: ≤768px (satu kolom, navigasi drawer)
+* **Tablet**: 768px–1024px (grid dua kolom, navigasi ringkas)
+* **Desktop**: ≥1024px (multi-kolom, navigasi penuh)
+
+### Spesifikasi Komponen
+
+**Header**:
+
+* Latar gelap dengan aksen logo oranye
+* Navigasi sticky dengan scroll halus
+* Menu hamburger mobile dengan drawer
+* Search bar dengan fokus oranye
+* Ikon keranjang dengan badge jumlah item
+
+**Kartu Produk**:
+
+* Latar gelap dengan border halus
+* Efek hover border oranye transisi lembut
+* Gambar produk berkualitas tinggi, rasio terjaga
+* Hierarki tipografi: Bebas Neue (judul), Inter (deskripsi)
+* Tombol CTA oranye dengan efek hover elevasi
+
+**Keranjang Belanja**:
+
+* Panel slide-out non-intrusif
+* Persisten berbasis sesi meski refresh
+* Kontrol jumlah dengan tombol oranye
+* Perhitungan total real-time dengan format mata uang
+
+**Panel Admin**:
+
+* Dashboard gelap dengan aksen oranye
+* Komponen form dengan validasi
+* Tabel data dengan sorting dan filter
+* Dialog modal untuk operasi CRUD
+
+### Standar Aksesibilitas
+
+* Kontras warna sesuai WCAG 2.1 AA
+* Navigasi keyboard untuk semua elemen interaktif
+* Optimasi screen reader dengan ARIA labels
+* Indikator fokus warna oranye
+* Struktur HTML semantik
+
+### Optimasi Performa
+
+* Lazy loading untuk gambar/komponen
+* Optimasi font dengan display: swap
+* CSS-in-JS dengan Tailwind purge
+* Optimasi gambar dengan atribut srcset
+
+### Pertimbangan Internasional
+
+* Dukungan layout RTL (rencana)
+* Posisi simbol mata uang IDR/USD
+* Ruang teks untuk terjemahan
+* Sensitivitas budaya warna (oranye sudah diuji lintas budaya)
+
+Desain sistem ini menciptakan atmosfer rock vintage autentik sekaligus memastikan fungsi e-commerce modern, aksesibilitas, dan performa optimal di semua perangkat serta konteks pengguna.

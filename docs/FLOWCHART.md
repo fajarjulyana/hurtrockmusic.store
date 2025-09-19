@@ -151,20 +151,20 @@ flowchart TD
 
 ```mermaid
 flowchart TD
+    %% Admin Access
     A[Admin Akses /admin] --> B{Authentication?}
-
     B -->|Valid| C[Admin Dashboard]
     B -->|Invalid| D[Login Required]
 
+    %% Admin Dashboard Actions
     C --> E{Admin Action?}
-
     E -->|Products| F[Product Management]
     E -->|Categories| G[Category Management]
     E -->|Orders| H[Order Management]
     E -->|Chat| I[Chat Management]
     E -->|Users| J[User Management]
 
-    %% Product Management Flow
+    %% Product Management
     F --> K{Product Action?}
     K -->|Add| L[Add Product Form]
     K -->|Edit| M[Edit Product Form]
@@ -172,10 +172,11 @@ flowchart TD
     K -->|Search| O[Admin Product Search]
 
     L --> P[Image Upload (Max 5)]
-    M --> P
+    M --> P2[Image Upload (Max 5)]
     P --> Q[Validation & Save]
+    P2 --> Q
 
-    %% Order Management Flow
+    %% Order Management
     H --> R{Order Action?}
     R -->|View| S[Order Details]
     R -->|Update Status| T[Status Update]
@@ -185,7 +186,7 @@ flowchart TD
     T --> W[Notify Customer]
     U --> X[Download PDF]
 
-    %% Chat Management Flow
+    %% Chat Management
     I --> Y[Active Chat Rooms List]
     Y --> Z{Chat Action?}
     Z -->|Open| AA[Join Chat Room]
@@ -194,7 +195,7 @@ flowchart TD
     AA --> CC[WebSocket Admin Connection]
     CC --> DD[Real-time Chat Interface]
 
-    %% Category Management Flow
+    %% Category Management
     G --> EE{Category Action?}
     EE -->|Add| FF[Add Category Form]
     EE -->|Edit| GG[Edit Category Form]
@@ -203,14 +204,15 @@ flowchart TD
     FF --> II[Auto-generate SEO Slug]
     GG --> II
     HH --> JJ{Products Using Category?}
-    JJ -->|Ya| KK[Cannot Delete]
-    JJ -->|Tidak| LL[Delete Success]
+    JJ -->|Yes| KK[Cannot Delete]
+    JJ -->|No| LL[Delete Success]
 
-    style C fill:#16a34a
-    style D fill:#dc2626
-    style X fill:#3b82f6
-    style DD fill:#8b5cf6
-    style KK fill:#dc2626
+    %% Node Styling
+    style C fill:#16a34a,stroke:#000,stroke-width:1px
+    style D fill:#dc2626,stroke:#000,stroke-width:1px
+    style X fill:#3b82f6,stroke:#000,stroke-width:1px
+    style DD fill:#8b5cf6,stroke:#000,stroke-width:1px
+    style KK fill:#dc2626,stroke:#000,stroke-width:1px
 ```
 
 ### 5. Enhanced Database Operations Flow

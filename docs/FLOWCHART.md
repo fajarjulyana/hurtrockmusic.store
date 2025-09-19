@@ -172,10 +172,10 @@ flowchart TD
     K -->|Search| O[Admin Product Search]
 
     %% Pisahkan node upload agar unik
-    L --> P_add[Image Upload Add (Max 5)]
-    M --> P_edit[Image Upload Edit (Max 5)]
-    P_add --> Q[Validation & Save]
-    P_edit --> Q
+    L --> PA[Image Upload Add - Max 5]
+    M --> PE[Image Upload Edit - Max 5]
+    PA --> Q[Validation & Save]
+    PE --> Q
 
     %% Order Management
     H --> R{Order Action?}
